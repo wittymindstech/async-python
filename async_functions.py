@@ -5,6 +5,7 @@ async def pingserver():
 	print("pingserver Started...")
   #put 5s sleep so that other function executes within this time interval , adjust accordingly
   #if other function takes time then increase it.
+	print("Switching to another Function, Since ping takes some time.....")
 	await asyncio.sleep(5)
   # ping the server, it might take time so switch to another function to do rest of job
 	ping('172.10.2.1', count=1,timeout=10, verbose=True)
